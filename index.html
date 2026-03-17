@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<body onclick="playAudio()" style="margin:0;background:black;color:white;display:flex;justify-content:center;align-items:center;height:100vh">
+
+<h2>Tap Anywhere to Play Music</h2>
+
+<audio id="audio" autoplay muted>
+  <source src="song.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+function playAudio() {
+  var a = document.getElementById("audio");
+  a.muted = false;
+  a.play();
+}
+</script>
+
+</body>
+</html>
